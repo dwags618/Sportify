@@ -1,0 +1,1247 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="layout.SubPage01">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:background="#eeeeee"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game1Away"
+                android:src="@drawable/icon_panthers_1"
+                android:paddingTop="10dp" />
+            <TextView
+                android:id="@+id/Game1AwayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Game1Away"
+                android:layout_alignRight="@id/Game1Away"
+                android:layout_alignBottom="@id/Game1Away"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="+200"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game1AwayTeam"
+                android:layout_alignBottom="@+id/Game1Away"
+                android:layout_toRightOf="@+id/Game1Away"
+                android:layout_toEndOf="@+id/Game1Away"
+                android:src="@drawable/title_panthers" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x1"
+                android:layout_alignBottom="@+id/Game1AwayTeam"
+                android:layout_toRightOf="@+id/Game1AwayTeam"
+                android:layout_toEndOf="@+id/Game1AwayTeam"
+                android:src="@drawable/x1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game1HomeTeam"
+                android:layout_alignBottom="@+id/x1"
+                android:layout_toRightOf="@+id/x1"
+                android:layout_toEndOf="@+id/x1"
+                android:src="@drawable/title_broncos" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game2Away"
+                android:layout_below="@+id/Game1Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/icon_vikings_1"
+                android:paddingTop="10dp" />
+            <TextView
+                android:id="@+id/Game2AwayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Game2Away"
+                android:layout_alignRight="@id/Game2Away"
+                android:layout_alignBottom="@id/Game2Away"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="+200"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game2AwayTeam"
+                android:layout_alignBottom="@+id/Game2Away"
+                android:layout_toRightOf="@+id/Game2Away"
+                android:layout_toEndOf="@+id/Game2Away"
+                android:src="@drawable/title_vikings" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x2"
+                android:layout_alignBottom="@+id/Game2AwayTeam"
+                android:layout_toRightOf="@+id/Game2AwayTeam"
+                android:layout_toEndOf="@+id/Game2AwayTeam"
+                android:src="@drawable/x1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/x2"
+                android:layout_toRightOf="@+id/x2"
+                android:layout_toEndOf="@+id/x2"
+                android:src="@drawable/title_titans"
+                android:id="@+id/Game2HomeTeam" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game1Home"
+                android:src="@drawable/icon_broncos_1"
+                android:layout_alignTop="@+id/Game1HomeTeam"
+                android:layout_toRightOf="@+id/Game1HomeTeam"
+                android:layout_toEndOf="@+id/Game1HomeTeam" />
+            <TextView
+                android:id="@+id/Game1HomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Game1Home"
+                android:layout_alignRight="@id/Game1Home"
+                android:layout_alignBottom="@id/Game1Home"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="+200"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game2Home"
+                android:layout_toRightOf="@+id/Game2HomeTeam"
+                android:layout_toEndOf="@+id/Game2HomeTeam"
+                android:src="@drawable/icon_titans_1"
+                android:layout_alignBottom="@+id/Game2HomeTeam" />
+            <TextView
+                android:id="@+id/Game2HomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Game2Home"
+                android:layout_alignRight="@id/Game2Home"
+                android:layout_alignBottom="@id/Game2Home"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="+200"
+                android:textColor="#FFFFFF" />
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game3Away"
+                android:layout_below="@+id/Game2Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/icon_bears_1"
+                android:paddingTop="10dp" />
+            <TextView
+                android:id="@+id/Game3AwayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Game3Away"
+                android:layout_alignRight="@id/Game3Away"
+                android:layout_alignBottom="@id/Game3Away"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="+200"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game3AwayTeam"
+                android:layout_alignBottom="@+id/Game3Away"
+                android:layout_toRightOf="@+id/Game3Away"
+                android:layout_toEndOf="@+id/Game3Away"
+                android:src="@drawable/title_bears" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x3"
+                android:layout_alignBottom="@+id/Game3AwayTeam"
+                android:layout_toRightOf="@+id/Game3AwayTeam"
+                android:layout_toEndOf="@+id/Game3AwayTeam"
+                android:src="@drawable/x1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/x3"
+                android:layout_toRightOf="@+id/x3"
+                android:layout_toEndOf="@+id/x3"
+                android:src="@drawable/title_texans"
+                android:id="@+id/Game3HomeTeam" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game3Home"
+                android:layout_toRightOf="@+id/Game3HomeTeam"
+                android:layout_toEndOf="@+id/Game3HomeTeam"
+                android:src="@drawable/icon_texans_1"
+                android:layout_alignBottom="@+id/Game3HomeTeam" />
+            <TextView
+                android:id="@+id/Game3HomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Game3Home"
+                android:layout_alignRight="@id/Game3Home"
+                android:layout_alignBottom="@id/Game3Home"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="+200"
+                android:textColor="#FFFFFF" />
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game4Away"
+                android:layout_below="@+id/Game3Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/icon_browns_1"
+                android:paddingTop="10dp" />
+            <TextView
+                android:id="@+id/Game4AwayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Game4Away"
+                android:layout_alignRight="@id/Game4Away"
+                android:layout_alignBottom="@id/Game4Away"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="+200"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game4AwayTeam"
+                android:layout_alignBottom="@+id/Game4Away"
+                android:layout_toRightOf="@+id/Game4Away"
+                android:layout_toEndOf="@+id/Game4Away"
+                android:src="@drawable/title_browns" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x4"
+                android:layout_alignBottom="@+id/Game4AwayTeam"
+                android:layout_toRightOf="@+id/Game4AwayTeam"
+                android:layout_toEndOf="@+id/Game4AwayTeam"
+                android:src="@drawable/x1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/x4"
+                android:layout_toRightOf="@+id/x4"
+                android:layout_toEndOf="@+id/x4"
+                android:src="@drawable/title_eagles"
+                android:id="@+id/Game4HomeTeam" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game4Home"
+                android:layout_toRightOf="@+id/Game4HomeTeam"
+                android:layout_toEndOf="@+id/Game4HomeTeam"
+                android:src="@drawable/icon_eagles_1"
+                android:layout_alignBottom="@+id/Game4HomeTeam" />
+            <TextView
+                android:id="@+id/Game4HomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Game4Home"
+                android:layout_alignRight="@id/Game4Home"
+                android:layout_alignBottom="@id/Game4Home"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="+200"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game5Away"
+                android:src="@drawable/icon_buffalos_1"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/Game4Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game5AwayTeam"
+                android:src="@drawable/title_bills"
+                android:layout_alignBottom="@+id/Game5Away"
+                android:layout_toRightOf="@+id/Game5Away"
+                android:layout_toEndOf="@+id/Game5Away" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x5"
+                android:src="@drawable/x1"
+                android:layout_alignBottom="@+id/Game5AwayTeam"
+                android:layout_toRightOf="@+id/Game5AwayTeam"
+                android:layout_toEndOf="@+id/Game5AwayTeam" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/title_ravens"
+                android:id="@+id/Game5HomeTeam"
+                android:layout_alignBottom="@+id/x5"
+                android:layout_toRightOf="@+id/x5"
+                android:layout_toEndOf="@+id/x5" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game5Home"
+                android:src="@drawable/icon_ravens_1"
+                android:layout_alignBottom="@+id/Game5HomeTeam"
+                android:layout_toRightOf="@+id/Game5HomeTeam"
+                android:layout_toEndOf="@+id/Game5HomeTeam" />
+
+            <TextView
+                android:id="@+id/Game5AwayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:layout_alignLeft="@id/Game5Away"
+                android:layout_alignRight="@id/Game5Away"
+                android:layout_alignBottom="@+id/Game5Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="1dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_alignLeft="@id/Game5Home"
+                android:layout_alignRight="@id/Game5Home"
+                android:layout_alignBottom="@+id/Game5HomeTeam"
+                android:layout_toRightOf="@+id/Game5HomeTeam"
+                android:layout_toEndOf="@+id/Game5HomeTeam"
+                android:id="@+id/Game5HomeText" />
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game6Away"
+                android:src="@drawable/icon_chargers_1"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/Game5Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game6AwayTeam"
+                android:src="@drawable/title_chargers"
+                android:layout_alignBottom="@+id/Game6Away"
+                android:layout_toRightOf="@+id/Game6Away"
+                android:layout_toEndOf="@+id/Game6Away" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x6"
+                android:src="@drawable/x1"
+                android:layout_alignBottom="@+id/Game6AwayTeam"
+                android:layout_toRightOf="@+id/Game6AwayTeam"
+                android:layout_toEndOf="@+id/Game6AwayTeam" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/title_chiefs"
+                android:id="@+id/Game6HomeTeam"
+                android:layout_alignBottom="@+id/x6"
+                android:layout_toRightOf="@+id/x6"
+                android:layout_toEndOf="@+id/x6" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game6Home"
+                android:src="@drawable/icon_chiefs_1"
+                android:layout_alignBottom="@+id/Game6HomeTeam"
+                android:layout_toRightOf="@+id/Game6HomeTeam"
+                android:layout_toEndOf="@+id/Game6HomeTeam" />
+
+            <TextView
+                android:id="@+id/Game6AwayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:layout_alignLeft="@id/Game6Away"
+                android:layout_alignRight="@id/Game6Away"
+                android:layout_alignBottom="@+id/Game6Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="1dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_alignLeft="@id/Game6Home"
+                android:layout_alignRight="@id/Game6Home"
+                android:layout_alignBottom="@+id/Game6HomeTeam"
+                android:layout_toRightOf="@+id/Game6HomeTeam"
+                android:layout_toEndOf="@+id/Game6HomeTeam"
+                android:id="@+id/Game6HomeText" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game7Away"
+                android:src="@drawable/icon_raiders_1"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/Game6Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game7AwayTeam"
+                android:src="@drawable/title_raiders"
+                android:layout_alignBottom="@+id/Game7Away"
+                android:layout_toRightOf="@+id/Game7Away"
+                android:layout_toEndOf="@+id/Game7Away" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x7"
+                android:src="@drawable/x1"
+                android:layout_alignBottom="@+id/Game7AwayTeam"
+                android:layout_toRightOf="@+id/Game7AwayTeam"
+                android:layout_toEndOf="@+id/Game7AwayTeam" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/title_saints"
+                android:id="@+id/Game7HomeTeam"
+                android:layout_alignBottom="@+id/x7"
+                android:layout_toRightOf="@+id/x7"
+                android:layout_toEndOf="@+id/x7" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game7Home"
+                android:src="@drawable/icon_saints_1"
+                android:layout_alignBottom="@+id/Game7HomeTeam"
+                android:layout_toRightOf="@+id/Game7HomeTeam"
+                android:layout_toEndOf="@+id/Game7HomeTeam" />
+
+            <TextView
+                android:id="@+id/Game7AwayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:layout_alignLeft="@id/Game7Away"
+                android:layout_alignRight="@id/Game7Away"
+                android:layout_alignBottom="@+id/Game7Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="1dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_alignLeft="@id/Game7Home"
+                android:layout_alignRight="@id/Game7Home"
+                android:layout_alignBottom="@+id/Game7HomeTeam"
+                android:layout_toRightOf="@+id/Game7HomeTeam"
+                android:layout_toEndOf="@+id/Game7HomeTeam"
+                android:id="@+id/Game7HomeText" />
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game8Away"
+                android:src="@drawable/icon_braccaneers_1"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/Game7Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game8AwayTeam"
+                android:src="@drawable/title_buccaneers"
+                android:layout_alignBottom="@+id/Game8Away"
+                android:layout_toRightOf="@+id/Game8Away"
+                android:layout_toEndOf="@+id/Game8Away" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x8"
+                android:src="@drawable/x1"
+                android:layout_alignBottom="@+id/Game8AwayTeam"
+                android:layout_toRightOf="@+id/Game8AwayTeam"
+                android:layout_toEndOf="@+id/Game8AwayTeam" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/title_falcons"
+                android:id="@+id/Game8HomeTeam"
+                android:layout_alignBottom="@+id/x8"
+                android:layout_toRightOf="@+id/x8"
+                android:layout_toEndOf="@+id/x8" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game8Home"
+                android:src="@drawable/icon_falcons_1"
+                android:layout_alignBottom="@+id/Game8HomeTeam"
+                android:layout_toRightOf="@+id/Game8HomeTeam"
+                android:layout_toEndOf="@+id/Game8HomeTeam" />
+
+            <TextView
+                android:id="@+id/Game8AwayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:layout_alignLeft="@id/Game8Away"
+                android:layout_alignRight="@id/Game8Away"
+                android:layout_alignBottom="@+id/Game8Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="1dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_alignLeft="@id/Game8Home"
+                android:layout_alignRight="@id/Game8Home"
+                android:layout_alignBottom="@+id/Game8HomeTeam"
+                android:layout_toRightOf="@+id/Game8HomeTeam"
+                android:layout_toEndOf="@+id/Game8HomeTeam"
+                android:id="@+id/Game8HomeText" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game9Away"
+                android:src="@drawable/icon_bengals_1"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/Game8Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game9AwayTeam"
+                android:src="@drawable/title_bengals"
+                android:layout_alignBottom="@+id/Game9Away"
+                android:layout_toRightOf="@+id/Game9Away"
+                android:layout_toEndOf="@+id/Game9Away" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x9"
+                android:src="@drawable/x1"
+                android:layout_alignBottom="@+id/Game9AwayTeam"
+                android:layout_toRightOf="@+id/Game9AwayTeam"
+                android:layout_toEndOf="@+id/Game9AwayTeam" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/title_jets"
+                android:id="@+id/Game9HomeTeam"
+                android:layout_alignBottom="@+id/x9"
+                android:layout_toRightOf="@+id/x9"
+                android:layout_toEndOf="@+id/x9" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game9Home"
+                android:src="@drawable/icon_jets_1"
+                android:layout_alignBottom="@+id/Game9HomeTeam"
+                android:layout_toRightOf="@+id/Game9HomeTeam"
+                android:layout_toEndOf="@+id/Game9HomeTeam" />
+
+            <TextView
+                android:id="@+id/Game9AwayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:layout_alignLeft="@id/Game9Away"
+                android:layout_alignRight="@id/Game9Away"
+                android:layout_alignBottom="@+id/Game9Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="1dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_alignLeft="@id/Game9Home"
+                android:layout_alignRight="@id/Game9Home"
+                android:layout_alignBottom="@+id/Game9HomeTeam"
+                android:layout_toRightOf="@+id/Game9HomeTeam"
+                android:layout_toEndOf="@+id/Game9HomeTeam"
+                android:id="@+id/Game9HomeText" />
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game10Away"
+                android:src="@drawable/icon_packers_1"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/Game9Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game10AwayTeam"
+                android:src="@drawable/title_packers"
+                android:layout_alignBottom="@+id/Game10Away"
+                android:layout_toRightOf="@+id/Game10Away"
+                android:layout_toEndOf="@+id/Game10Away" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x10"
+                android:src="@drawable/x1"
+                android:layout_alignBottom="@+id/Game10AwayTeam"
+                android:layout_toRightOf="@+id/Game10AwayTeam"
+                android:layout_toEndOf="@+id/Game10AwayTeam" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/title_jaguars"
+                android:id="@+id/Game10HomeTeam"
+                android:layout_alignBottom="@+id/x10"
+                android:layout_toRightOf="@+id/x10"
+                android:layout_toEndOf="@+id/x10" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game10Home"
+                android:src="@drawable/icon_jaguars_1"
+                android:layout_alignBottom="@+id/Game10HomeTeam"
+                android:layout_toRightOf="@+id/Game10HomeTeam"
+                android:layout_toEndOf="@+id/Game10HomeTeam" />
+
+            <TextView
+                android:id="@+id/Game10AwayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:layout_alignLeft="@id/Game10Away"
+                android:layout_alignRight="@id/Game10Away"
+                android:layout_alignBottom="@+id/Game10Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="1dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_alignLeft="@id/Game10Home"
+                android:layout_alignRight="@id/Game10Home"
+                android:layout_alignBottom="@+id/Game10HomeTeam"
+                android:layout_toRightOf="@+id/Game10HomeTeam"
+                android:layout_toEndOf="@+id/Game10HomeTeam"
+                android:id="@+id/Game10HomeText" />
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game11Away"
+                android:src="@drawable/icon_dolphins_1"
+                android:paddingTop="11dp"
+                android:layout_below="@+id/Game10Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game11AwayTeam"
+                android:src="@drawable/title_dolphins"
+                android:layout_alignBottom="@+id/Game11Away"
+                android:layout_toRightOf="@+id/Game11Away"
+                android:layout_toEndOf="@+id/Game11Away" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x11"
+                android:src="@drawable/x1"
+                android:layout_alignBottom="@+id/Game11AwayTeam"
+                android:layout_toRightOf="@+id/Game11AwayTeam"
+                android:layout_toEndOf="@+id/Game11AwayTeam" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/title_seahawks"
+                android:id="@+id/Game11HomeTeam"
+                android:layout_alignBottom="@+id/x11"
+                android:layout_toRightOf="@+id/x11"
+                android:layout_toEndOf="@+id/x11" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game11Home"
+                android:src="@drawable/icon_seahawks_1"
+                android:layout_alignBottom="@+id/Game11HomeTeam"
+                android:layout_toRightOf="@+id/Game11HomeTeam"
+                android:layout_toEndOf="@+id/Game11HomeTeam" />
+
+            <TextView
+                android:id="@+id/Game11AwayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:layout_alignLeft="@id/Game11Away"
+                android:layout_alignRight="@id/Game11Away"
+                android:layout_alignBottom="@+id/Game11Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="1dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_alignLeft="@id/Game11Home"
+                android:layout_alignRight="@id/Game11Home"
+                android:layout_alignBottom="@+id/Game11HomeTeam"
+                android:layout_toRightOf="@+id/Game11HomeTeam"
+                android:layout_toEndOf="@+id/Game11HomeTeam"
+                android:id="@+id/Game11HomeText" />
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game12Away"
+                android:src="@drawable/icon_giants_1"
+                android:paddingTop="12dp"
+                android:layout_below="@+id/Game11Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game12AwayTeam"
+                android:src="@drawable/title_gaints"
+                android:layout_alignBottom="@+id/Game12Away"
+                android:layout_toRightOf="@+id/Game12Away"
+                android:layout_toEndOf="@+id/Game12Away" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x12"
+                android:src="@drawable/x1"
+                android:layout_alignBottom="@+id/Game12AwayTeam"
+                android:layout_toRightOf="@+id/Game12AwayTeam"
+                android:layout_toEndOf="@+id/Game12AwayTeam" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/title_cowboys"
+                android:id="@+id/Game12HomeTeam"
+                android:layout_alignBottom="@+id/x12"
+                android:layout_toRightOf="@+id/x12"
+                android:layout_toEndOf="@+id/x12" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game12Home"
+                android:src="@drawable/icon_cowboys_1"
+                android:layout_alignBottom="@+id/Game12HomeTeam"
+                android:layout_toRightOf="@+id/Game12HomeTeam"
+                android:layout_toEndOf="@+id/Game12HomeTeam" />
+
+            <TextView
+                android:id="@+id/Game12AwayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:layout_alignLeft="@id/Game12Away"
+                android:layout_alignRight="@id/Game12Away"
+                android:layout_alignBottom="@+id/Game12Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="1dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_alignLeft="@id/Game12Home"
+                android:layout_alignRight="@id/Game12Home"
+                android:layout_alignBottom="@+id/Game12HomeTeam"
+                android:layout_toRightOf="@+id/Game12HomeTeam"
+                android:layout_toEndOf="@+id/Game12HomeTeam"
+                android:id="@+id/Game12HomeText" />
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game13Away"
+                android:src="@drawable/icon_lions_1"
+                android:paddingTop="13dp"
+                android:layout_below="@+id/Game12Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game13AwayTeam"
+                android:src="@drawable/title_lions"
+                android:layout_alignBottom="@+id/Game13Away"
+                android:layout_toRightOf="@+id/Game13Away"
+                android:layout_toEndOf="@+id/Game13Away" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x13"
+                android:src="@drawable/x1"
+                android:layout_alignBottom="@+id/Game13AwayTeam"
+                android:layout_toRightOf="@+id/Game13AwayTeam"
+                android:layout_toEndOf="@+id/Game13AwayTeam" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/title_colts"
+                android:id="@+id/Game13HomeTeam"
+                android:layout_alignBottom="@+id/x13"
+                android:layout_toRightOf="@+id/x13"
+                android:layout_toEndOf="@+id/x13" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game13Home"
+                android:src="@drawable/icon_colts_1"
+                android:layout_alignBottom="@+id/Game13HomeTeam"
+                android:layout_toRightOf="@+id/Game13HomeTeam"
+                android:layout_toEndOf="@+id/Game13HomeTeam" />
+
+            <TextView
+                android:id="@+id/Game13AwayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:layout_alignLeft="@id/Game13Away"
+                android:layout_alignRight="@id/Game13Away"
+                android:layout_alignBottom="@+id/Game13Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="1dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_alignLeft="@id/Game13Home"
+                android:layout_alignRight="@id/Game13Home"
+                android:layout_alignBottom="@+id/Game13HomeTeam"
+                android:layout_toRightOf="@+id/Game13HomeTeam"
+                android:layout_toEndOf="@+id/Game13HomeTeam"
+                android:id="@+id/Game13HomeText" />
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game14Away"
+                android:src="@drawable/icon_patriots_1"
+                android:paddingTop="14dp"
+                android:layout_below="@+id/Game13Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game14AwayTeam"
+                android:src="@drawable/title_patriots"
+                android:layout_alignBottom="@+id/Game14Away"
+                android:layout_toRightOf="@+id/Game14Away"
+                android:layout_toEndOf="@+id/Game14Away" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x14"
+                android:src="@drawable/x1"
+                android:layout_alignBottom="@+id/Game14AwayTeam"
+                android:layout_toRightOf="@+id/Game14AwayTeam"
+                android:layout_toEndOf="@+id/Game14AwayTeam" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/title_cardinals"
+                android:id="@+id/Game14HomeTeam"
+                android:layout_alignBottom="@+id/x14"
+                android:layout_toRightOf="@+id/x14"
+                android:layout_toEndOf="@+id/x14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game14Home"
+                android:src="@drawable/icon_cardinals_1"
+                android:layout_alignBottom="@+id/Game14HomeTeam"
+                android:layout_toRightOf="@+id/Game14HomeTeam"
+                android:layout_toEndOf="@+id/Game14HomeTeam" />
+
+            <TextView
+                android:id="@+id/Game14AwayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:layout_alignLeft="@id/Game14Away"
+                android:layout_alignRight="@id/Game14Away"
+                android:layout_alignBottom="@+id/Game14Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="1dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_alignLeft="@id/Game14Home"
+                android:layout_alignRight="@id/Game14Home"
+                android:layout_alignBottom="@+id/Game14HomeTeam"
+                android:layout_toRightOf="@+id/Game14HomeTeam"
+                android:layout_toEndOf="@+id/Game14HomeTeam"
+                android:id="@+id/Game14HomeText" />
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game15Away"
+                android:src="@drawable/icon_steelers_1"
+                android:paddingTop="15dp"
+                android:layout_below="@+id/Game14Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game15AwayTeam"
+                android:src="@drawable/title_steelers"
+                android:layout_alignBottom="@+id/Game15Away"
+                android:layout_toRightOf="@+id/Game15Away"
+                android:layout_toEndOf="@+id/Game15Away" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x15"
+                android:src="@drawable/x1"
+                android:layout_alignBottom="@+id/Game15AwayTeam"
+                android:layout_toRightOf="@+id/Game15AwayTeam"
+                android:layout_toEndOf="@+id/Game15AwayTeam" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/title_redskins"
+                android:id="@+id/Game15HomeTeam"
+                android:layout_alignBottom="@+id/x15"
+                android:layout_toRightOf="@+id/x15"
+                android:layout_toEndOf="@+id/x15" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game15Home"
+                android:src="@drawable/icon_redskins_1"
+                android:layout_alignBottom="@+id/Game15HomeTeam"
+                android:layout_toRightOf="@+id/Game15HomeTeam"
+                android:layout_toEndOf="@+id/Game15HomeTeam" />
+
+            <TextView
+                android:id="@+id/Game15AwayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:layout_alignLeft="@id/Game15Away"
+                android:layout_alignRight="@id/Game15Away"
+                android:layout_alignBottom="@+id/Game15Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="1dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_alignLeft="@id/Game15Home"
+                android:layout_alignRight="@id/Game15Home"
+                android:layout_alignBottom="@+id/Game15HomeTeam"
+                android:layout_toRightOf="@+id/Game15HomeTeam"
+                android:layout_toEndOf="@+id/Game15HomeTeam"
+                android:id="@+id/Game15HomeText" />
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game16Away"
+                android:src="@drawable/icon_rams_1"
+                android:paddingTop="16dp"
+                android:layout_below="@+id/Game15Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game16AwayTeam"
+                android:src="@drawable/title_rams"
+                android:layout_alignBottom="@+id/Game16Away"
+                android:layout_toRightOf="@+id/Game16Away"
+                android:layout_toEndOf="@+id/Game16Away" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x16"
+                android:src="@drawable/x1"
+                android:layout_alignBottom="@+id/Game16AwayTeam"
+                android:layout_toRightOf="@+id/Game16AwayTeam"
+                android:layout_toEndOf="@+id/Game16AwayTeam" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/title_49ers"
+                android:id="@+id/Game16HomeTeam"
+                android:layout_alignBottom="@+id/x16"
+                android:layout_toRightOf="@+id/x16"
+                android:layout_toEndOf="@+id/x16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game16Home"
+                android:src="@drawable/icon_49ers_1"
+                android:layout_alignBottom="@+id/Game16HomeTeam"
+                android:layout_toRightOf="@+id/Game16HomeTeam"
+                android:layout_toEndOf="@+id/Game16HomeTeam" />
+
+            <TextView
+                android:id="@+id/Game16AwayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:layout_alignLeft="@id/Game16Away"
+                android:layout_alignRight="@id/Game16Away"
+                android:layout_alignBottom="@+id/Game16Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="1dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+200"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_alignLeft="@id/Game16Home"
+                android:layout_alignRight="@id/Game16Home"
+                android:layout_alignBottom="@+id/Game16HomeTeam"
+                android:layout_toRightOf="@+id/Game16HomeTeam"
+                android:layout_toEndOf="@+id/Game16HomeTeam"
+                android:id="@+id/Game16HomeText" />
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#4c4db9"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="TOTAL SCORE"
+            android:id="@+id/textView"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="360"
+            android:id="@+id/textView2"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/button"
+            android:layout_toStartOf="@+id/button"
+            android:layout_marginRight="35dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DONE"
+            android:id="@+id/button"
+            android:background="#45ba76"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_marginRight="25dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

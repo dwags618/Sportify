@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="black">#000</color>
+    <color name="orange">#FA0</color>
+    <color name="white">#FFF</color>
+    <color name="darkgrey">#474a4f</color>
+    <color name="list_background">#474a4f</color>
+    <color name="color_navigation_list_background">#2e416b</color>
+
+
+
+
+</resources>

@@ -1,0 +1,343 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="layout.SubPage01">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:background="#eeeeee"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game1Away"
+                android:src="@drawable/cheese"
+                android:paddingTop="10dp" />
+            <TextView
+                android:id="@+id/Game1AwayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Game1Away"
+                android:layout_alignRight="@id/Game1Away"
+                android:layout_alignBottom="@id/Game1Away"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="+200"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game1AwayTeam"
+                android:layout_alignBottom="@+id/Game1Away"
+                android:layout_toRightOf="@+id/Game1Away"
+                android:layout_toEndOf="@+id/Game1Away"
+                android:src="@drawable/chicagobears" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x1"
+                android:layout_alignBottom="@+id/Game1AwayTeam"
+                android:layout_toRightOf="@+id/Game1AwayTeam"
+                android:layout_toEndOf="@+id/Game1AwayTeam"
+                android:src="@drawable/x" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game1HomeTeam"
+                android:layout_alignBottom="@+id/x1"
+                android:layout_toRightOf="@+id/x1"
+                android:layout_toEndOf="@+id/x1"
+                android:src="@drawable/greenbay" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game2Away"
+                android:layout_below="@+id/Game1Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/cheese"
+                android:paddingTop="10dp" />
+            <TextView
+                android:id="@+id/Game2AwayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Game2Away"
+                android:layout_alignRight="@id/Game2Away"
+                android:layout_alignBottom="@id/Game2Away"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="+200"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game2AwayTeam"
+                android:layout_alignBottom="@+id/Game2Away"
+                android:layout_toRightOf="@+id/Game2Away"
+                android:layout_toEndOf="@+id/Game2Away"
+                android:src="@drawable/chicagobears" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x2"
+                android:layout_alignBottom="@+id/Game2AwayTeam"
+                android:layout_toRightOf="@+id/Game2AwayTeam"
+                android:layout_toEndOf="@+id/Game2AwayTeam"
+                android:src="@drawable/x" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/x2"
+                android:layout_toRightOf="@+id/x2"
+                android:layout_toEndOf="@+id/x2"
+                android:src="@drawable/greenbay"
+                android:id="@+id/Game2HomeTeam" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game1Home"
+                android:src="@drawable/cheese"
+                android:layout_alignBottom="@+id/Game1Away"
+                android:layout_alignRight="@+id/Game2HomeText"
+                android:layout_alignEnd="@+id/Game2HomeText" />
+            <TextView
+                android:id="@+id/Game1HomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Game1Home"
+                android:layout_alignRight="@id/Game1Home"
+                android:layout_alignBottom="@id/Game1Home"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="+200"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game2Home"
+                android:layout_toRightOf="@+id/Game2HomeTeam"
+                android:layout_toEndOf="@+id/Game2HomeTeam"
+                android:src="@drawable/cheese"
+                android:layout_alignBottom="@+id/Game2HomeTeam" />
+            <TextView
+                android:id="@+id/Game2HomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Game2Home"
+                android:layout_alignRight="@id/Game2Home"
+                android:layout_alignBottom="@id/Game2Home"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="+200"
+                android:textColor="#FFFFFF" />
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game3Away"
+                android:layout_below="@+id/Game2Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/cheese"
+                android:paddingTop="10dp" />
+            <TextView
+                android:id="@+id/Game3AwayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Game3Away"
+                android:layout_alignRight="@id/Game3Away"
+                android:layout_alignBottom="@id/Game3Away"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="+200"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game3AwayTeam"
+                android:layout_alignBottom="@+id/Game3Away"
+                android:layout_toRightOf="@+id/Game3Away"
+                android:layout_toEndOf="@+id/Game3Away"
+                android:src="@drawable/chicagobears" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x3"
+                android:layout_alignBottom="@+id/Game3AwayTeam"
+                android:layout_toRightOf="@+id/Game3AwayTeam"
+                android:layout_toEndOf="@+id/Game3AwayTeam"
+                android:src="@drawable/x" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/x3"
+                android:layout_toRightOf="@+id/x3"
+                android:layout_toEndOf="@+id/x3"
+                android:src="@drawable/greenbay"
+                android:id="@+id/Game3HomeTeam" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game3Home"
+                android:layout_toRightOf="@+id/Game3HomeTeam"
+                android:layout_toEndOf="@+id/Game3HomeTeam"
+                android:src="@drawable/cheese"
+                android:layout_alignBottom="@+id/Game3HomeTeam" />
+            <TextView
+                android:id="@+id/Game3HomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Game3Home"
+                android:layout_alignRight="@id/Game3Home"
+                android:layout_alignBottom="@id/Game3Home"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="+200"
+                android:textColor="#FFFFFF" />
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game4Away"
+                android:layout_below="@+id/Game3Away"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/cheese"
+                android:paddingTop="10dp" />
+            <TextView
+                android:id="@+id/Game4AwayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Game4Away"
+                android:layout_alignRight="@id/Game4Away"
+                android:layout_alignBottom="@id/Game4Away"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="+200"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game4AwayTeam"
+                android:layout_alignBottom="@+id/Game4Away"
+                android:layout_toRightOf="@+id/Game4Away"
+                android:layout_toEndOf="@+id/Game4Away"
+                android:src="@drawable/chicagobears" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x4"
+                android:layout_alignBottom="@+id/Game4AwayTeam"
+                android:layout_toRightOf="@+id/Game4AwayTeam"
+                android:layout_toEndOf="@+id/Game4AwayTeam"
+                android:src="@drawable/x" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/x4"
+                android:layout_toRightOf="@+id/x4"
+                android:layout_toEndOf="@+id/x4"
+                android:src="@drawable/greenbay"
+                android:id="@+id/Game4HomeTeam" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Game4Home"
+                android:layout_toRightOf="@+id/Game4HomeTeam"
+                android:layout_toEndOf="@+id/Game4HomeTeam"
+                android:src="@drawable/cheese"
+                android:layout_alignBottom="@+id/Game4HomeTeam" />
+            <TextView
+                android:id="@+id/Game4HomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Game4Home"
+                android:layout_alignRight="@id/Game4Home"
+                android:layout_alignBottom="@id/Game4Home"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="+200"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#4c4db9"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="TOTAL SCORE"
+            android:id="@+id/textView"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="360"
+            android:id="@+id/textView2"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/button"
+            android:layout_toStartOf="@+id/button"
+            android:layout_marginRight="35dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DONE"
+            android:id="@+id/button"
+            android:background="#45ba76"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_marginRight="25dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

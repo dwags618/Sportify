@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Picks">
+        <menu>
+    <item android:title="Football"
+        android:id="@+id/nav_item_inbox"
+        android:icon="@drawable/americanfootball1"
+        />
+
+    <item android:title="Basketball"
+        android:id="@+id/nav_item_sent"
+        android:icon="@drawable/nav_icon_basketball"/>
+
+    <item android:title="Soccer"
+        android:id="@+id/nav_item_draft"
+        android:icon="@drawable/nav_icon_soccer"/>
+        </menu>
+    </item>
+
+
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:title="Profile"
+                android:icon="@drawable/ic_menu_send"/>
+            <item
+                android:title="Stats"
+                android:icon="@drawable/ic_menu_share"/>
+            <item
+                android:title="Friends"
+                android:icon="@drawable/ic_menu_share"/>
+            <item
+                android:title="Logout"
+                android:icon="@drawable/ic_menu_share"/>
+        </menu>
+    </item>
+
+
+
+
+</menu>
